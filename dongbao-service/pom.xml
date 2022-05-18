@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--父项目信息-->
+    <parent>
+        <artifactId>dongbao-mall-parent</artifactId>
+        <groupId>per.zqa</groupId>
+        <version>1.0</version>
+    </parent>
+
+    <!--业务模块实现层-->
+    <artifactId>dongbao-service</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <!--购物车模块实现-->
+        <module>dongbao-cart</module>
+        <!--内容中心模块实现-->
+        <module>dongbao-cms</module>
+        <!--基础字典模块实现-->
+        <module>dongbao-dictionary</module>
+        <!--订单中心模块实现-->
+        <module>dongbao-oms</module>
+        <!--支付中心模块实现-->
+        <module>dongbao-pay</module>
+        <!--商品中心模块实现-->
+        <module>dongbao-pms</module>
+        <!--优惠中心模块实现-->
+        <module>dongbao-sms</module>
+        <!--用户中心模块实现-->
+        <module>dongbao-ums</module>
+    </modules>
+
+</project>

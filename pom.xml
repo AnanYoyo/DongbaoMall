@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>per.zqa</groupId>
+    <artifactId>dongbao-mall-parent</artifactId>
+    <version>1.0</version>
+    <!--由于是父项目,这里不打包-->
+    <packaging>pom</packaging>
+
+    <!--在此管理所有的模块-->
+    <modules>
+        <!--公共包-->
+        <module>dongbao-common</module>
+        <!--业务模块接口层-->
+        <module>dongbao-api</module>
+        <!--业务模块实现层-->
+        <module>dongbao-service</module>
+        <!--定时任务模块-->
+        <module>dongbao-job</module>
+        <!--web应用模块-->
+        <module>dongbao-application</module>
+        <!--代码生成器-->
+        <module>dongbao-generator</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

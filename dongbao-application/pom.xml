@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--父项目信息-->
+    <parent>
+        <artifactId>dongbao-mall-parent</artifactId>
+        <groupId>per.zqa</groupId>
+        <version>1.0</version>
+    </parent>
+
+    <!--web应用模块-->
+    <artifactId>dongbao-application</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <!--后台管理应用-->
+        <module>dongbao-manager-web</module>
+        <!--商城门户网站-->
+        <module>dongbao-portal-web</module>
+    </modules>
+
+</project>
